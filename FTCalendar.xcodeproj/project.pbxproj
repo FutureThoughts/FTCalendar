@@ -468,6 +468,7 @@
 				9AA1AB6C1A7A21F80052CC14 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9AA1AB6D1A7A21F80052CC14 /* Build configuration list for PBXNativeTarget "FTCalendarTests" */ = {
 			isa = XCConfigurationList;
@@ -476,6 +477,7 @@
 				9AA1AB6F1A7A21F80052CC14 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
