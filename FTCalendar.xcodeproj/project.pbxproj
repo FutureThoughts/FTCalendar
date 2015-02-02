@@ -32,6 +32,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		12460D771A7F910D00451F7E /* FTCalendarAppearance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTCalendarAppearance.h; sourceTree = "<group>"; };
 		9AA1AB471A7A21F80052CC14 /* FTCalendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FTCalendar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AA1AB4B1A7A21F80052CC14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9AA1AB4C1A7A21F80052CC14 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -51,7 +52,6 @@
 		9AA1AB751A7A22410052CC14 /* DateUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateUtil.m; sourceTree = "<group>"; };
 		9AA1AB761A7A22410052CC14 /* DMLazyScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMLazyScrollView.h; sourceTree = "<group>"; };
 		9AA1AB771A7A22410052CC14 /* DMLazyScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMLazyScrollView.m; sourceTree = "<group>"; };
-		9AA1AB781A7A22410052CC14 /* FTCalendarAppearance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTCalendarAppearance.h; sourceTree = "<group>"; };
 		9AA1AB791A7A22410052CC14 /* SACalendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SACalendar.h; sourceTree = "<group>"; };
 		9AA1AB7A1A7A22410052CC14 /* SACalendar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SACalendar.m; sourceTree = "<group>"; };
 		9AA1AB7B1A7A22410052CC14 /* SACalendarCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SACalendarCell.h; sourceTree = "<group>"; };
@@ -150,6 +150,7 @@
 				9AA1AB821A7A225F0052CC14 /* Calendar */,
 				9AA1AB711A7A22310052CC14 /* FTCalendar.h */,
 				9AA1AB721A7A22310052CC14 /* FTCalendar.m */,
+				12460D771A7F910D00451F7E /* FTCalendarAppearance.h */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -161,7 +162,6 @@
 				9AA1AB751A7A22410052CC14 /* DateUtil.m */,
 				9AA1AB761A7A22410052CC14 /* DMLazyScrollView.h */,
 				9AA1AB771A7A22410052CC14 /* DMLazyScrollView.m */,
-				9AA1AB781A7A22410052CC14 /* FTCalendarAppearance.h */,
 				9AA1AB791A7A22410052CC14 /* SACalendar.h */,
 				9AA1AB7A1A7A22410052CC14 /* SACalendar.m */,
 				9AA1AB7B1A7A22410052CC14 /* SACalendarCell.h */,
