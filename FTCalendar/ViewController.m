@@ -26,6 +26,7 @@
     
     
     calendar.delegate = self;
+    calendar.calendarDateFormatter = FTCalendarDateFormatterDayMonthYear;
     
     [self.view addSubview:calendar];
 
@@ -34,6 +35,11 @@
 - (void)didSelectDate:(int)day month:(int)month year:(int)year
 {
     NSLog(@"%i/%i/%i",day,month,year);
+}
+
+- (void)didSelectDateString:(NSString *)dateString
+{
+    
 }
 
 @end

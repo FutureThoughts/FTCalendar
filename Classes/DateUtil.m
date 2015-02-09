@@ -14,7 +14,7 @@
 +(NSString*)getCurrentDate
 {
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-    NSCalendar *gregorianCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+    NSCalendar *gregorianCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
     
     NSLocale *usLocale = [[NSLocale alloc] initWithLocaleIdentifier:@"en_US"];
     [formatter setLocale:usLocale];
@@ -27,7 +27,7 @@
 +(NSString*)getCurrentMonth
 {
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-    NSCalendar *gregorianCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+    NSCalendar *gregorianCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
     
     NSLocale *usLocale = [[NSLocale alloc] initWithLocaleIdentifier:@"en_US"];
     [formatter setLocale:usLocale];
@@ -40,7 +40,7 @@
 +(NSString*)getCurrentYear
 {
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-    NSCalendar *gregorianCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+    NSCalendar *gregorianCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
     
     NSLocale *usLocale = [[NSLocale alloc] initWithLocaleIdentifier:@"en_US"];
     [formatter setLocale:usLocale];
@@ -55,7 +55,7 @@
     NSDateFormatter* theDateFormatter = [[NSDateFormatter alloc] init];
     [theDateFormatter setFormatterBehavior:NSDateFormatterBehavior10_4];
     
-    NSCalendar *gregorianCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+    NSCalendar *gregorianCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
     [theDateFormatter setCalendar:gregorianCalendar];
     
     [theDateFormatter setDateFormat:@"EEEE"];
@@ -101,7 +101,7 @@
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     [dateFormatter setDateFormat:@"yyyy-MM-dd"];
     
-    NSCalendar *gregorianCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+    NSCalendar *gregorianCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
     [dateFormatter setCalendar:gregorianCalendar];
     
     NSLocale *usLocale = [[NSLocale alloc] initWithLocaleIdentifier:@"en_US"];
