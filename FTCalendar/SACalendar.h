@@ -71,6 +71,9 @@ scrollDirection;
 
 @property (nonatomic, weak) id<FTCalendarDelegate> delegate;
 
+@property (nonatomic, retain) NSString *selectedDate;
+@property (nonatomic) NSInteger collectionViewTag;
+
 /**
  *  Default constructor. Calendar will begin at current month
  *
@@ -159,6 +162,7 @@ scrollDirection;
  *  @param year     The year selected
  */
 -(void)didSelectDate:(int)day month:(int)month year:(int)year;
+-(void)didSelectDateString:(NSString *)dateString;
 
 
 @end

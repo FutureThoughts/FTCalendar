@@ -15,6 +15,7 @@
 
 @interface SACalendar ()
 
+
 @end
 
 @implementation SACalendar
@@ -358,6 +359,11 @@
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
+    
+    int monthToLoad = [self monthToLoad:(int)collectionView.tag];
+    int yearToLoad = [self yearToLoad:(int)collectionView.tag];
+    
+    firstDay = (int)[daysInWeeks indexOfObject:[DateUtil getDayOfDate:1 month:monthToLoad year:yearToLoad]];
     int daysInMonth = (int)[DateUtil getDaysInMonth:[self monthToLoad:(int)collectionView.tag] year:[self yearToLoad:(int)collectionView.tag]];
     if (!(indexPath.row < firstDay || indexPath.row >= firstDay + daysInMonth)) {
         
@@ -367,6 +373,9 @@
         {
             [_delegate didSelectDate:dateSelected month:month year:year];
         }
+        
+        self.selectedDate = [NSString stringWithFormat:@"%i/%i/%i",dateSelected,month,year];
+        self.collectionViewTag = collectionView.tag;
         
         selectedRow = (int)indexPath.row;
     }
