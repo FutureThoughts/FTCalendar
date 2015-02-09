@@ -8,7 +8,15 @@
 
 #import "SACalendar.h"
 
+typedef NS_ENUM(NSUInteger, FTCalendarDateFormatter)
+{
+    FTCalendarDateFormatterYearMonthDay,
+    FTCalendarDateFormatterDayMonthYear,
+};
+
 @interface FTCalendar : SACalendar
+
+@property (nonatomic) FTCalendarDateFormatter calendarDateFormatter;
 
 @property (nonatomic, strong) NSArray *availableDates;
 
